@@ -5,3 +5,4 @@ data | source | url
 --- | --- | ---
 population_literacy.csv | National Report 2011 | http://data.opennepal.net/content/population-aged-5-years-and-above-literacy-status
 2012 Literacy Survey | Central Bureau of Statistics | http://cbs.gov.np/wp-content/uploads/2012/Surveys/BCHIMES/Chapter3.pdf
+Nepal district shapefile | Shova Shrestha, World Bank | https://web.archive.org/web/20120108090508/http://maps.worldbank.org/overlays/3238
