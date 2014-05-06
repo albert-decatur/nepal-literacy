@@ -14,3 +14,4 @@ sm-threeecologicalzonenepal.jpg | Chhetri et al. 2012 | http://dx.doi.org/10.101
 14081363003_bf4ea42482_o.jpg|Roadway towards Gunsi, Ramechhap, Flickr|https://flic.kr/p/nsjECK
 13686035445_bb399fb51b_o.jpg|Chhetri Tanka|https://flic.kr/p/mRovwn
 14051464592_5cebacb82a_o.jpg|Chen Hsuan Han|https://flic.kr/p/npFqSU
+6969176700_1053918e1f_o.jpg|Valerie Rosen|https://flic.kr/p/bBQRqY
