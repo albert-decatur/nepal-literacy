@@ -1,0 +1,554 @@
+﻿@import url("admin.css"); /* manage lists/librairie view */ 
+@import url("controlesSharepoint.css"); /* manage sharepoint controls style */
+@import url("webparts.css"); /* manage webparts style */
+@import url("layouts.css"); /* manage page layout style  */
+
+/***** Global Settings *****/
+
+html, body{
+	background:#EDF3F6;				
+	height:100%;
+	}
+
+body,body * {font-family:Arial, Helvetica, sans-serif!important;}
+
+p{margin:0px;padding:0px;}
+
+
+
+/* 2- FIN des Eléments HTML ********************************************************************************/
+
+
+/* 3- Eléments de page *************************************************************************************/	
+	
+#container {	
+	background:white;
+	height:100%;	
+	position: relative;
+	width: 955px!important;
+	}
+
+#Outils{
+	background:#CED3D7;
+	color:#63686c;
+	height:29px;
+	margin:0;
+	padding:0	
+	}
+			
+#SeeAlso {
+	background:url('/_layouts/images/UNESCO/Bullets/BulletLink_general_3x5.gif') no-repeat 17px 12px;
+	font-size:10px;
+	line-height:29px;
+	padding-left:27px
+	}
+	
+	#SeeAlso a{color:#63686c;font-size:10px}
+
+#UisAlert{
+	background:url('/_layouts/images/UNESCO/Icons/Tools/tools_print_Alert_13x9.gif') no-repeat left 10px;
+	font-size:10px;
+	line-height:29px;
+	padding-right:10px
+	}
+
+	#UisAlert a{
+		color:#3c8ac1;
+		font-size:10px;
+		padding-left:20px
+		}	
+
+/* hack IE */
+* html #Bandeau_standard {padding:/*4*/0px 0 0 0}
+/* / hack */
+	
+#Bandeau_standard {
+	background-color:white;
+	/*height:150px;	*/
+	padding:/*4*/0px 0;
+	position:relative;
+	text-align:right;
+	}		
+	
+#ctl00_BannerImageWebPart1{padding:0!important;margin:0!important}
+
+#UnescoBanner {position:relative;margin:0px!important;padding:0px!important}
+	
+	#UnescoBanner * {margin:0;padding:0} 
+
+
+/* Content toolbar **************************************************************************************/
+#ContentToolbar{
+	background-color:#FCAE26;
+	color:#724e12;
+	font-size:10px!important;
+	height:28px;	
+	padding-left:16px
+	}
+	
+	#ContentToolbar a{color:#724e12;text-decoration:none}
+
+	#ContentToolbar a:focus,
+	#ContentToolbar * a:focus{outline: none!important}
+
+/* Left utilities ***********/
+
+/* Hack IE */
+* html #LeftUtilities{padding-top:3px}
+/* / Hack IE */
+
+#LeftUtilities{padding-top:1px}
+
+/* Language management */
+#Language .ms-globalbreadcrumb-translation{margin-right:0px;width:20px}
+
+	#Language .ms-globalbreadcrumb-translation td{margin:0;padding:0}
+
+#Language2, 
+#Language2 *{
+	font-size:7px;
+	border:0px;
+	border-collapse:collapse;
+	margin:0;
+	padding:0
+	}
+
+
+/* Hack safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#LeftUtilities{position:relative}
+
+	#NormalFontSize{position:absolute;left:41px;top:13px}
+	#LargerFontSize{position:absolute;left:49px;top:13px}
+	}
+/* / Hack safari */
+
+/* /Language management */
+
+/* /Left utilities ************/
+
+
+/* Right utilities ************/
+
+/* Hack IE */
+* html #RightUtilities {padding:6px 0 0 0}
+/* / Hack IE */
+
+#RightUtilities {padding:4px 0 0 0}
+
+	#RightUtilities a{font-size:10px}
+
+#Send{color:#724e12;text-align:center}	
+
+	#Send a{color:#724e12;padding:0 7px 0 7px}	
+
+		#Send a img{border:0px}
+
+#Print{border-right:1px #724e12 dotted;color:#724e12}
+	
+	#Print a{color:#724e12;padding:0 7px 0 0}	
+	
+		#Print a img{border:0px}
+	
+/* / Right utilities ************/
+
+/* Search ***********************/	
+
+/* Hack for all versions of IE */	
+* html #Recherche{margin:-5px 195px 0 0}
+	
+* html #RechercheFR{margin:-5px 215px 0 0}
+/* / Hack for all versions of IE */	
+
+
+
+#Recherche{
+	float:right;
+	margin:-5px 195px 0 0;
+	position:relative;
+	width:180px
+	}
+	
+#RechercheFR{
+	float:right;
+	margin:-6px 215px 0 0;
+	position:relative;
+	width:180px
+	}
+
+/* Search Hack Firefox - !Important : do not move this hack */
+@-moz-document url-prefix(){
+#Recherche{
+	float:right;
+	margin:-7px 195px 0 0;
+	position:relative;
+	width:180px
+	}
+	
+#RechercheFR{
+	float:right;
+	margin:-6px 215px 0 0;
+	position:relative;
+	width:180px
+	}
+}
+/* / Search Hack Firefox */
+
+	
+/* / Search ************************/	
+/* / Content toolbar **************************************************************************************/
+
+		
+/* Colonne Gauche *****************************************************************************************/
+
+#left_col {
+	background:#605F5D;
+	height:100%;
+	padding:22px 16px;	
+	vertical-align:top;
+	width:154px!important
+	}
+
+#Gauche {
+	margin:0;
+	vertical-align:top;
+	width:154px
+	}
+
+	#Gauche div {margin:0}
+		
+		
+/* / Colonne Gauche ****************************************************************************************/
+
+
+/* Colonne centrale ****************************************************************************************/
+
+#Centre {
+	border:0 #919191 solid;
+	height:100%;	
+	margin:0 0 38px 0!important;
+	padding:0 23px 38px 24px;
+	text-align:left;
+	vertical-align:top;
+	width:769px
+	}
+
+	#Centre div,
+	#Centre div table {margin:0;padding:0} 
+	
+	#Centre * a{color:#4F8DB8}
+
+
+/* / Colonne centrale **************************************************************************************/
+
+
+
+/* FOOTER ************************************************************************************************ */
+
+#FooterPage{background-color:#edf3f6}
+
+#CopyrightLinks{
+	display:inline!important;
+	font:normal 10px; 
+	text-align:center
+	}
+
+#CopyrightLinks p{
+	color:#63686c!important;
+	font-size:10px;
+	margin:0px;
+	padding-top:12px;
+	text-align:center;
+	width:100%
+	}
+
+	#CopyrightLinks a{
+		color:#4F8DB8;
+		display:inline!important;
+		font:normal 10px; 
+		text-decoration:none;
+		text-align:center
+		}			
+			
+		#CopyrightLinks a:hover{text-decoration:underline;
+			}
+	
+
+/*3- FIN des éléments de page ********************************************************************************/
+
+
+
+
+
+/* 4- Classes spécifiques utilisées plusieurs fois ***********************************************************/ 
+/***** Global Classes *****/
+ 
+.clear         { clear:both; }
+ 
+.float-left    { float:left; }
+ 
+.float-right   { float:right; }
+ 
+.text-left     { text-align:left; }
+ 
+.text-right    { text-align:right; }
+ 
+.text-center   { text-align:center; }
+ 
+.text-justify  { text-align:justify; }
+ 
+.bold          { font-weight:bold; }
+ 
+.italic        { font-style:italic; }
+ 
+.underline     { border-bottom:1px solid; }
+ 
+.highlight     { background:#ffc; }
+ 
+.wrap          { width:960px;margin:0 auto; }
+ 
+.img-left      { float:left;margin:4px 10px 4px 0; }
+ 
+.img-right     { float:right;margin:4px 0 4px 10px; }
+ 
+.nopadding     { padding:0; }
+
+.paddingLeft5 { padding-left:5px }
+.paddingLeft9 { padding-left:9px }
+.paddingTop10 { padding-top:20px;margin-top:10px }
+
+ 
+.cpcs		   { border-collapse:collapse; } /* remplace le cellpadding et cellspacing nuls d'une table */
+
+.noindent      { margin-left:0;padding-left:0; }
+ 
+.nobullet      { list-style:none;list-style-image:none; }
+
+.noDisplay 	   { display:none;visibility:hidden }
+
+.width100 { width: 100%; }
+ 
+.width75 { width: 75%; }
+ 
+.width50 { width: 50%; }
+
+
+/* 4- Fin des classes spécifiques utilisées plusieurs fois **************************************************/ 
+/* End of global Classes *****/
+
+
+/**********************************************************************************************************/
+
+
+#SeeAlso, #SeeAlso a{font-size:12px}
+
+#Bienvenue a{font-size:12px}
+
+#SiteActions div div div a{font-size:12px}
+
+#UisAlert a{font-size:12px}
+
+#left_col, 
+#left_col *{font-size:12px}
+
+#Recherche{margin:0px 150px 0 0}
+
+#CopyrightLinks *{font-size:12px!important}	
+
+#FilAriane{font-size:12px!important} 
+
+#Centre * .ms-WPTitle NOBR span{font-size:12px!important;height:25px}
+/* / General *********************************************************************************************/
+
+
+/* Welcome page *******************************************************************************************/
+#LeftZoneLeftColumn .ms-WPTitle NOBR span,
+#RightZoneLeftColumn .ms-WPTitle NOBR span {height:19px}
+
+#Centre .RightMainContent{padding-left:0px}
+
+#Centre .LeftMainContent{padding-right:24px!important}
+
+#Centre .RightMainContent * .ms-WPTitle NOBR span{font-size:13px!important}
+
+#Centre .RightMainContent #RightMainContentTitle{font-size:12px}
+
+#LeftZoneLeftColumn *,
+#RightZoneLeftColumn * {font-size:13px!important}
+
+/* / Welcome page *****************************************************************************************/
+
+
+/* Theme level 1 ******************************************************************************************/
+
+#Centre #TL1LeftZoneLeftColumn * .ms-WPTitle NOBR span,
+#Centre #TL1RightZoneLeftColumn * .ms-WPTitle NOBR span{font-size:13px!important;height:25px}
+
+/* / Theme level 1 ****************************************************************************************/
+
+
+/* Theme level 2 ******************************************************************************************/
+#TL2LeftZoneTopTitle .ms-WPBody *,
+#TL2RightZoneTopTitle .ms-WPBody *{font-size:13px!important}
+
+
+#TL2LeftZoneTopTitle .ms-WPBody,
+#TL2RightZoneTopTitle .ms-WPBody {font-size:13px}
+
+#TL2LeftZoneBottom .ms-WPBody *,
+#TL2RightZoneBottom .ms-WPBody *{font-size:13px!important}
+
+
+#UNESCO_SmallLibrary_Template1_Title{
+	font-size:13px!important;
+	}
+
+
+a.unesco-resources-link{
+	font-size:13px!important;
+	padding:6px 9px 8px 15px;
+	}
+
+
+
+/* / Theme level 2 ****************************************************************************************/
+
+
+/* Survey - design des tabulations */
+
+#navigation td a{font-size:13px!important}
+
+/* / Survey - design des tabulations */
+
+/* Survey - design du content */
+
+#Centre #SurveyMainContent #UNESCO_Survey_Title{font-size:13px!important}
+
+/* / Survey content */
+
+
+/* Webparts */
+/* Webparts What's new */
+
+#UNESCO_WhatsNew_Template1_Title,
+#UNESCO_WhatsNew_Template2_Title,
+#UNESCO_WhatsNew_Template3_Title,
+#UNESCO_WhatsNew_Template4_Title,
+#UNESCO_WhatsNew_Template5_Title{font-size:14px!important}
+
+#Centre #UNESCO_WhatsNew_Template1_Body, 
+#Centre #UNESCO_WhatsNew_Template1_Body *,
+#Centre #UNESCO_WhatsNew_Template2_Body, 
+#Centre #UNESCO_WhatsNew_Template2_Body *,
+#Centre #UNESCO_WhatsNew_Template3_Body, 
+#Centre #UNESCO_WhatsNew_Template3_Body *,
+#Centre #UNESCO_WhatsNew_Template4_Body, 
+#Centre #UNESCO_WhatsNew_Template4_Body *,
+#Centre #UNESCO_WhatsNew_Template5_Body, 
+#Centre #UNESCO_WhatsNew_Template5_Body *{font-size:13px!important}
+
+#Centre #UNESCO_WhatsNew_Template1_LinkMore a,
+#Centre #UNESCO_WhatsNew_Template2_LinkMore a,
+#Centre #UNESCO_WhatsNew_Template3_LinkMore a,
+#Centre #UNESCO_WhatsNew_Template4_LinkMore a,
+#Centre #UNESCO_WhatsNew_Template5_LinkMore a{font-size:12px;}	
+	
+#Centre .UNESCO_DownloadCtl_LinkDesc a{font-size:12px!important;}	
+#Centre .UNESCO_DownloadCtl_Tr_OneDownload td a{font-size:12px!important}
+/* / Webparts What's new */
+
+/* TL1 - WP Did you know */
+#Centre .RightMainContent #DidYouKnowRightZone .ms-WPTitle NOBR span {font-size:14px}
+
+#Centre #UNESCO_DidYouKnow_Template1_Body{font-size:13px}
+
+#Centre #UNESCO_DidYouKnow_Template1_NextLink a{font-size:12px}
+/*  / TL1 - WP Did you know */
+
+/* TL1 - UIS */
+#TL1RightZoneLeftColumn #UNESCO_UISandX_LinkItem a{font-size:14px!important}
+
+#TL1RightZoneLeftColumn .unesco-uisandx-description{font-size:13px!important}
+/* / TL1 - UIS */
+
+
+/* TL1 - Ressources */
+
+#Centre #RightTopZoneMainContent .link-item,
+#Centre #RightTopZoneMainContent .link-item a, 
+#Centre #RightTopZoneMainContent .link-item .description {font-size:13px!important}
+
+/* / TL1 - Ressources */
+
+
+/* Site map - Design de la Webpart */	
+#SiteMap .treeview_notselectednode_level1 a,
+#SiteMap .treeview_selectednode_level1 a,
+#SiteMap .treeview_notselectednode_level2 a,
+#SiteMap .treeview_selectednode_level2 a,
+#SiteMap .treeview_notselectednode_level3 a,
+#SiteMap .treeview_selectednode_level3 a{font-size:12px!important}
+/* / Site map - Design de la Webpart */	
+
+
+/* / Webparts */
+
+
+
+	/* Ne pas afficher ces éléments */
+
+	.ms-HoverCellInActive img {display:none}		
+	
+	hr {display:none}		
+	
+	#FilAriane {display:none}		
+	
+	#FooterPage {display:none}		
+	
+	#bottomLinks {display:none}		
+	
+	#Droite {display:none}		
+	
+	#left_col {display:none}		
+	
+	#Gauche {display:none}		
+	
+	#ContentToolbar {display:none}		
+		
+	#Bandeau_standard {display:none}		
+	
+	#Recherche {display:none}		
+	
+	#Outils {display:none}		
+	
+	#Haut {display:none}		
+	
+	#Header {display:none}		
+	
+	#Conteneur{border:0px;}
+
+	.ms-consolemptablerow2,#mpdmconsole{display:none;visibility:hidden!important}
+	
+	.ms-formtoolbar{display:none}
+	table.ms-toolbar{display:none}
+	.ms-menutoolbar{display:none}
+
+		
+	/* Afficher ces éléments */
+
+	#ContenuCentre{	
+		border:0px;
+		height:100%;
+		margin:5px;
+		padding:0px;
+		vertical-align:top;
+		visibility:visible;
+		width:100%;
+		} 
+		
+	#Centre{height:100%;padding:0px;width:100%}
+
+	
+/* FIN de Imprimer */
+
+

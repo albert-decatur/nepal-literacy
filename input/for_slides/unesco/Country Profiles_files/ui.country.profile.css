@@ -1,0 +1,792 @@
+﻿			/* tell the SVG path to be a thin blue line without any area fill */
+			@*path {
+				stroke-width: 1;
+				fill: none;
+			}*@
+			
+			#countries path {
+              fill: #d2d2d2;
+              stroke: #fff;
+            }
+			
+			.data1 {
+				stroke: steelblue;
+			}
+
+			.data2 {
+				stroke: orange;
+			}
+
+			.axis {
+			  shape-rendering: crispEdges;
+			}
+
+            .axis path,
+			.axis line {
+				fill: none;
+				stroke: black;
+				shape-rendering: crispEdges;
+			}
+			
+			.axis text {
+				font-family: sans-serif;
+				font-size: 8px;
+			}
+
+			.x.axis line {
+			  stroke: lightgrey;
+			}
+
+			.x.axis .minor {
+			  stroke-opacity: .5;
+			}
+
+			.x.axis path {
+			  display: none;
+			}
+			
+			.x.axis text {
+				font-size: 6pt !important;
+				font-family: arial;
+			}
+
+			.y.axis line, .y.axis path {
+			  fill: none;
+			  stroke: #000;
+			}
+
+			.y.axis text {
+				font-size: 6pt !important;
+				font-family: arial;
+			}
+
+			.y.axisRight text {
+				fill: orange;
+			}
+			
+			.y.axisLeft text {
+				fill: steelblue;
+			}
+            
+            
+
+			.rotate
+            {
+                /* Safari */
+                -webkit-transform: rotate(-90deg);
+
+                /* Firefox */
+                -moz-transform: rotate(-90deg);
+
+                /* IE */
+                 -ms-transform: rotate(-90deg);
+
+
+                /* Opera */
+                -o-transform: rotate(-90deg);
+
+                /* Internet Explorer */
+              /*  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); */
+            }
+
+
+    .section {
+    list-style: none;
+    padding-top: 10px;
+    width:700px;
+    }
+
+    .section li {
+    height: 35px;
+    color: #fcae26;
+    text-align: left;
+    font-weight:bolder;
+    font-family:Arial;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0px 10px;
+    margin-bottom: 5px;
+    }
+
+    .section li.gray {
+    position:relative;
+    background: #605f5e;
+    width:100%;
+    -webkit-print-color-adjust:exact;
+    }
+
+    .subsection {
+    list-style: none;
+    padding-top: 10px;
+    width:700px;
+    }
+
+    .subsection li {
+    height: 35px;
+    color: #393938;
+    text-align: left;
+    font-weight:bolder;
+    font-family:Arial;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0px 10px;
+    margin-bottom: 5px;
+    -webkit-print-color-adjust:exact;
+    }
+
+    .subsection li.gray {
+    position:relative;
+    background: #d3d2d2;
+    width:100%;
+    -webkit-print-color-adjust:exact;
+    }
+   
+   #population-begin-end ul li {
+    width:300px;
+    color:#808080;
+    background: url(http://www.uis.unesco.org/_layouts/images/UNESCO/Bullets/BulletLink_general_3x5.gif) no-repeat left 4px;
+    display: block;
+    padding-left: 8px;
+    }
+
+#mainTable
+{
+left:100px;
+width:710px;
+height:1900px;
+}
+
+#tooltip {
+                <!-- display:none; -->
+                background:transparent url("../../Images/black_arrow.png"); 
+                font-size:10px;
+                height:15px;
+                width:27px;
+                padding:8px;
+                top: -100,
+                left: -120,
+               <!-- color:#eee; -->
+}
+
+.chart rect {
+   stroke: white;
+   fill: steelblue;
+ }
+
+#generalinfo-table
+{
+    width: 330px;
+    height: auto;
+}
+
+#geninfo-value
+{
+   float: right;
+   height: auto;
+   text-align: right;
+   font-size: 12px;
+   width: 100px;
+   font-family: arial;
+}
+#geninfo-item
+{
+   width: 330px;
+   height: auto;
+   font-size: 12px;
+   font-family: arial;
+}
+
+ .infobox {
+ border:2px solid steelblue;
+ border-radius:4px;
+ box-shadow:#333333 0px 0px 10px;
+ margin:200px auto;
+ padding:5px 10px;
+ background:rgba(255, 255, 255, 0.8);
+ position:absolute;
+ top:-1000px;
+ left:0px;
+ z-index:10500;
+ font-size:12px;
+ font-family: arial;
+ }
+
+.fontBold
+{
+font-weight : bold;
+}
+
+/* set background  of a table */
+.ui-widget-content {  background: #ededed;  }
+.myAltRowClass { background-color: #ffffff; background-image: none; }
+
+ #accordion h3 { padding-left: 33px; height: 25px; padding-top:8px;}
+ #accordion ui-corner-all { padding-left: 33px; }
+ 
+ .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus 
+ { border: 0px solid #595858; background: #e9f5fd; /* url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold;*/ color: #000000!important;  }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default 
+{ border: 1px solid #cccccc; background: #f9f8f6; /*url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;*/ font-weight: bold; color: #595858; }
+
+ 
+#browserTree a { white-space:normal !important; height: auto; padding:1px 12px; }
+#browserTree li > ins { vertical-align:top; }
+#browserTree .jstree-hovered, #demo3 .jstree-clicked { border:0; }
+
+.chartTitle {
+font-size:   10pt;
+font-family: arial;
+/*font-style:  italic;*/ 
+font-weight: bold;
+}
+
+.chartLegend{
+font-size:   11px;
+font-family: arial;
+}
+
+.chartLegendColorSq
+{
+    width:  10px;
+    height: 10px;
+}
+
+.chartMaleColor
+{
+    fill: #96F2F1;
+}
+
+.chartFemaleColor
+{
+    fill: #13CBC9;
+}
+
+.chartFemaleBarColor
+{
+    fill: #13CBC9;
+    stroke: #929292;
+    stroke-width: 0px;
+}
+
+.chartMaleBarColor
+{
+    fill: #96F2F1;
+    stroke: #929292;
+    stroke-width: 0px;
+}
+
+.chartTotalBarColor
+{
+    fill: #FCAE27;
+    stroke: #929292;
+    stroke-width: 0px;
+}
+
+.chartLinePointer
+{
+    fill: #424242;
+    stroke: #424242;
+    cursor: pointer;
+}
+
+.chartLineBlue
+{
+    stroke: #424242;
+    fill: none;
+}
+
+.chartThreeLineLegendText
+{
+    font-size: 11px;
+    font-family:Arial;
+}
+
+.chartThreeLineLegendLine1
+{
+    stroke-width: 2; 
+    fill:     purple;
+    stroke:   purple; 
+}
+.chartThreeLineLine1
+{
+    stroke: purple;
+    fill:   none;
+}
+.chartThreeLinePointLine1
+{
+    stroke: purple;
+    fill:   purple;
+    cursor: pointer;
+}
+
+
+.chartThreeLineLegendLine2
+{
+    stroke-width: 2;
+    stroke: coral;
+    fill:   coral;
+}
+
+.chartThreeLineLine2
+{
+    stroke: coral;
+    fill:   none;
+}
+.chartThreeLinePointLine2
+{
+    stroke: coral;
+    fill:   coral;
+    cursor: pointer;
+}
+
+.chartThreeLineLegendLine3
+{
+    stroke-width: 2;
+    stroke: darkgrey;
+    fill:   darkgrey;
+}
+
+.chartThreeLineLine3
+{
+    stroke: darkgrey;
+    fill:   none;
+}
+.chartThreeLinePointLine3
+{
+    stroke: darkgrey;
+    fill:   darkgrey;
+    cursor: pointer;
+}
+                              
+.chartTotalColor
+{
+}
+
+.chartStrokeHighl
+{
+   stroke: #929292;
+   stroke-width: 0px;
+}
+
+.chartXaxis
+{
+    text-anchor: middle;
+    font-size: 7pt;
+	font-family: arial;
+}
+
+.chartYaxis
+{
+    font-size: 7pt;
+    text-anchor: end;
+    font-family: arial;
+}
+
+.chartYaxisUnits
+{
+   font-size: 9pt;
+   font-family: arial;
+}
+
+
+.levelOfEduAgesText
+{
+    font-size: 8pt;
+}
+
+.gneralChartTextAg
+{
+   font-size: 11px;
+   text-anchor: middle;
+   font-family:Arial;
+}
+
+.generalChartHighlightedBars
+{
+    fill: gray !important;
+}
+
+.generalChartBars
+{
+    fill: orange !important;
+}
+
+.generalChartVertLines
+{
+    stroke: #808080;
+}
+
+.pieChartMiddleText
+{
+   fill:        black;
+   font-size:   17pt;
+   font-family: arial;
+   font-weight: bold;
+}
+
+.ui-cell-highlight 
+{
+    font-weight: bolder !important;
+    background: #cee2f1 !important;
+}
+
+
+.generalChartBottomText
+{
+    font-size: 8pt;
+    font-family: arial;
+}
+
+.regionalChartTitle
+{
+    font-size: 13px;
+    font-family: arial;
+    color: #0B0B0B;
+    font-weight: bold;
+}
+
+.regionalChartYrLabel
+{
+    font-size: 12pt;
+    font-family: arial;
+    font-style: italic;
+}
+
+
+
+.educ-system-title{
+	/*color:#595858;*/
+	font-size:12px;
+	line-height:16px;
+	font-family: arial;
+	font-weight: bold;
+	/*text-transform:lowercase;*/
+	}
+	
+.educ-system-text{
+	/*color:#595858;*/
+	font-size:12px;
+	line-height:16px;
+	font-family: arial;
+	align: center;
+	/*text-transform:lowercase;*/
+	}
+	
+
+.ages-by-lev-note {
+fill: #808080!important;
+display: block;
+padding-left: 8px!important;
+font-size:12px!important;
+font-family: arial!important;
+background-color:transparent;
+}
+
+input#search.searchBox{
+background-image:url('../../../images/magnifying-glass.gif');
+background-position: left center;
+background-repeat:no-repeat;
+padding-left:25px!important;
+padding-top:0px!important;
+padding-bottom:0px!important;
+overflow:hidden; 
+width:389px;
+height:20px;
+font-size:12px!important;
+color:#605F5D;
+}
+
+#printlink a 
+{
+    color:black !important;
+} 
+
+.country-link
+{
+    font-size:12px!important;
+    color:#4F8DB8!important;
+    text-decoration: underline!important;
+
+}
+
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	/*opacity: 0.5;*/
+}
+
+.notes_french 
+{
+    font-size: 11px;
+	font-family: arial;
+}
+
+.notes_english 
+{
+    font-size: 11px;
+	font-family: arial;
+}
+
+
+#sectorTabs li a,
+#sectorTabs ul a li,
+#sectorTabs li a *,
+#sectorTabs li * a, #Centre li * a *{
+	color: #605F5D !important;
+    font-size: 11px!important;
+	text-decoration:none!important;
+	
+	}
+	
+#sectorTabs li.ui-state-active a,
+#sectorTabs ul a li.ui-state-active,
+#sectorTabs li.ui-state-active a *,
+#sectorTabs li.ui-state-active * a, 
+#sectorTabs li.ui-state-active * a *{
+	color: white !important;
+    font-size: 11px!important;
+	text-decoration:none!important;
+	}
+	
+#sectorTabs * ul li.ui-state-default {
+    list-style-image: url("");
+    list-style-position: inside;
+	background: #ebebeb;
+	padding-left: 0px!important;
+	margin-right: 25px!important;
+	}
+	
+#sectorTabs * ul li.ui-state-active {
+    list-style-image: url("");
+    list-style-position: inside;
+	background: #605F5D;
+	padding-left: 0px!important;
+    font-size: 11px!important;
+	text-decoration:none!important;
+	margin-right: 25px!important;
+	}
+	
+	
+/* styles used on default data centre page */
+.dc_home_title {font-family: Arial; font-size: 28px; font-style: normal; font-weight: bold; color: #FCAE26;}
+.dc_home_right_align {text-align: right;}
+.dc_home_middle_centre_align {text-align: left; vertical-align: middle;}
+.dc_home_link_text{font-family: Arial; font-size: 12px !important; font-style: normal; text-decoration: underline !important; color: #0054AF;}
+.dc_home_top_column_content {display: block !important; line-height:20px !important;}
+.dc_home_layout_table {border-collapse: collapse; border-spacing: 0; width: 720px; }
+.dc_home_layout_table td { padding: 0px; vertical-align: top !important; }
+.dc_home_top_column { }
+.dc_home_top_column_profile_border {border-left: 15px solid; border-left-color: #65D6FC;}
+.dc_home_top_column_theme_border {border-left: 15px solid; border-left-color: #0054AF;}
+.dc_home_top_column_dataset_border {border-left: 15px solid; border-left-color: #FE6D1A;}
+.dc_home_bottom_column_data_release { color: #FCAE27 !important; }
+.dc_home_bottom_column_whats_new {height: 30px; width: 464px; background-color: #FCAE27; }
+.dc_home_bottom_column_spacer {width: 28px;}
+.dc_home_bottom_column_help_resource {height: 30px; background-color: #7C0AC9;}
+.dc_home_bottom_column_contact {height: 30px; background-color: #65D6FC;}
+.dc_home_bottom_column_title {font-family: Arial; font-size: 14px; font-style: normal; font-weight: bold; color: White; text-transform: uppercase; padding-left: 10px !important}
+a.dc_home_bottom_column_title {color: white !important; font-family: Arial; font-size: 14px; font-style: normal; font-weight: bold; color: White; text-transform: uppercase;}
+li.dc_home_list_style { padding-left: 0px !important; list-style-position: outside !important; margin-bottom: 10px !important; }
+ul.dc_home_list_style { padding-left: 0px !important; list-style-position: outside !important; }
+li.dc_home_list_style_link {  list-style-image: url(/das/images/list-arrow3x5.png)  !important; padding-left: 0px !important; list-style-position: outside !important; margin-bottom: 10px !important;}
+ul.dc_home_list_style_link { list-style-image: url(/das/images/list-arrow3x5.png)  !important; padding-left: 0px !important; list-style-position: outside !important; }
+#Centre .ms-WPBody, 
+#Centre .ms-WPBody table, 
+#Centre .ms-TPBody table {background-color: white !important;}
+
+/* #Centre #RightTopZoneMainContent .ms-WPBody, 
+#Centre #RightTopZoneMainContent .ms-WPBody table,
+#Centre #RightTopZoneMainContent .ms-TPBody table {background-color: white !important;} */
+
+/**********************************************
+*    Navigation manu
+***********************************************/
+.nav-item-container
+{
+	display: inline-block;
+	cursor: pointer;
+}
+
+.nav-item-active
+{
+	background-color: #605F5D !important;
+}
+
+.nav-item-container_home
+{
+	display: inline-block;
+}
+
+.nav-icon
+{
+	padding-top: 6px;
+	padding-left: 7px;
+	float: left;
+	border: 0px;
+}
+
+.nav-title
+{
+	margin-left: 11px;  
+	color: #FFF; 
+	font-size: 12px;
+	font-weight:bold;	
+	float: left;
+	margin-top: 4px;
+	letter-spacing: 1px;
+}
+
+.nav-arrow
+{	
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	border: 0px;
+}
+
+.nav-item
+{	
+	width: 239px; 
+	height: 24px; 
+}
+
+.nav-item a
+{	
+	text-decoration: none !important;
+}
+
+.nav-list-item
+{
+	background-color: #E5F4FF;
+	display: none;
+	position: absolute;
+	width: 239px;
+	border: 0px;
+	clear: both;
+	z-index: 100;
+	padding-bottom: 7px !important;
+	padding-top: 7px !important;
+	float: left;
+	
+}
+
+.nav-list-item-home
+{
+	background-color: #E5F4FF;	
+	position: relative;
+	width: 239px;
+	border: 0px;	
+	z-index: 100;
+	padding-bottom: 7px !important;
+	padding-top: 7px !important;
+	float: left;
+	height: 96px;	
+}
+
+.nav-list-item-p
+{
+	z-index: 100;width: 239px;
+}
+
+#flag_section_img {
+	margin-right: 5px;
+	border: 0px;
+	display: none !important;
+}
+
+#me {
+	margin-left: 10px;
+}
+
+#browse_section_list_home
+{
+	margin-left: 1px !important;
+}
+
+#create_section_list_home
+{
+	margin-left: 1px !important;
+}
+
+#profiles_section
+{
+	background-color: #119EAF; 
+	margin-right: 1px !important;
+}
+
+#browse_section
+{
+	background-color: #2C6CB3; 
+	margin-right: 1px !important;
+}
+
+#create_section
+{
+	background-color: #F07213;
+}
+
+#nav_headers a
+{
+	text-decoration: none;
+}
+
+#nav_headers a:hover
+{
+	text-decoration: underline;
+}
+
+#nav_headers_home
+{
+	margin-bottom: 34px !important;
+}
+
+.PageDescription {	
+	font-size: 12px !important;	
+	color: #595858;
+	line-height: 16px;
+}
+
+.home-column-title
+{
+	font-size: 14px;
+	font-weight: bold;	
+	text-transform: uppercase;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;	
+	color: #ED9600;
+}
+
+.margin-bottom-header
+{
+	margin-bottom: 10px !important;
+}
+
+#Lost
+{
+	float: right;
+	display: inline-block;
+	font-size: 12px;
+}
+
+#HomePageDescription
+{
+	margin-bottom: 20px !important;	
+	padding-right: 5px !important;
+}
+
+#PageTitleContainer
+{
+	padding-right: 5px !important;
+}
+
+#PageTitleContainer div {
+	display: inline-block;
+}
+
+@media print
+{
+	#nav_headers
+	{
+		display: none;
+	}
+}
